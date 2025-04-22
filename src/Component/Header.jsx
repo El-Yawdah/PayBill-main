@@ -60,7 +60,7 @@ function Header() {
               <a href="#" className =" md:hidden"onClick={handleNavLinkClick}><FaTimes  color="black" size={23} className="absolute top-6 right-6"/></a>
             </li>
             <li>
-              <a href="#" onClick={handleNavLinkClick}>Product</a>
+              <a href="/" onClick={handleNavLinkClick}>Home</a>
             </li>
             <li>
               <a href="#" onClick={handleNavLinkClick}>About</a>

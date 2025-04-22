@@ -97,31 +97,14 @@ const Main = () => {
             </h2>
             <h6>Fast bill payment like never before with lesss charges</h6>
 
-            <div className="buttons">
-              <span>Sign up now</span>
-            </div>
+           
           </div>
           </div>
           <img src={Group2} alt="Description" />
          
         </div>
 
-        <div className="sectiond">
-          <div className="sectiond-text">
-            <h3>
-              Your Security, Our <br />
-              Commitment: Ensuring <br />
-              Your Money Stays Safe
-            </h3>
-            <h5>
-              Paybills wants to provide transactions in the safest manner <br />
-              possible. Implementing and developing cutting edge <br /> security
-              processes to protect your data, we are regulated <br /> by NDIC so
-              your money is safe at all time.
-            </h5>
-          </div>
-          <img src={Sectiondimg} alt="" />
-        </div>
+      
       </div>
     </div>
   );

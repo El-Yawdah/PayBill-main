@@ -1,6 +1,6 @@
 import Footer from "./Footer";
 import Header from "./Header";
-import '../Styled/faq.css'
+import '../Styled/Faq.css'
 const Privacy = () => {
     return (
         <>

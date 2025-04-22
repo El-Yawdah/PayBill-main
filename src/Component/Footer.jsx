@@ -60,6 +60,7 @@ const Footer = () => {
                   <ul className="text-sm text-gray-800">
                     <li>Terms</li>
                     <Link to='/privacy-policy' ><li>Privacy</li></Link>
+                    <Link to='/delete-policy' ><li>Delete Policy</li></Link>
 
                   </ul>
 

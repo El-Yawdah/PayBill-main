@@ -24,7 +24,7 @@ const Main = () => {
         </div>
       </div>
       <div className="card-grid">
-        <div className="card">
+        <div className="card mx-auto">
           <img src={easy} alt="Easy" />
         </div>
         <div className="card">
@@ -64,7 +64,7 @@ const Main = () => {
                 </h6>
               </div>
               <div className="text-item-button">
-                <h5>Sign up now</h5>
+                <h5>Sign up now  </h5>
               </div>
             </div>
             <div className="text-item-img">
@@ -73,7 +73,7 @@ const Main = () => {
           </div>
         </div>
 
-        <div class="grid-container">
+        <div class="grid-container mt-0">
           <div class="text-items">
             <h3>Payments made easy.</h3>
             <h6>
@@ -89,7 +89,7 @@ const Main = () => {
         </div>
 
         <div className="airtel-section">
-          <img src={Group2} alt="Description" />
+          <div className="fund-account">
           <div className="overlay-text">
             <h2>
               Fund your Account, Make <br />
@@ -101,6 +101,9 @@ const Main = () => {
               <span>Sign up now</span>
             </div>
           </div>
+          </div>
+          <img src={Group2} alt="Description" />
+         
         </div>
 
         <div className="sectiond">

@@ -1,59 +1,69 @@
-// src/components/FAQ.js
-
-import React, { useState } from 'react';
-import { FaPlus, FaMinus } from 'react-icons/fa'; // Import plus and minus icons
-import '../Styled/Faq.css'; // Import your CSS file
-import { IoIosPhonePortrait } from "react-icons/io";
+import * as Accordion from '@radix-ui/react-accordion';
+import { ChevronDownIcon } from '@radix-ui/react-icons';
 
 const FAQ = () => {
-  const [expanded, setExpanded] = useState(null);
-
-  const faqs = [
-    { question: 'Why Paybills', answer: 'React is a JavaScript library for building user interfaces.' },
-    { question: 'Why Paybills', answer: 'You use React by creating components and managing their state.' },
-    { question: 'Why Paybills', answer: 'You use React by creating components and managing their state.' },
-    { question: 'Why Paybills', answer: 'You use React by creating components and managing their state.' },
-    { question: 'Why Paybills', answer: 'JSX is a syntax extension that looks similar to HTML and is used with React.' },
-  ];
-
-  const toggleAnswer = (index) => {
-    setExpanded(expanded === index ? null : index);
-  };
-
+  const faqQuestions =[
+  {
+    question:'What is the purpose of the app?',
+    answer:'PayBills allows you to pay bills, recharge accounts, buy data, and manage payments conveniently from your mobile device.'
+  },  
+  {
+    question:'Which types of bills can I pay?',
+    answer:'Users can pay utility bills (electricity, water, gas), internet, phone, insurance, and credit card bills'
+  },  
+  {
+    question:'Is the app free to use?',
+    answer:'Yes, PayBills is free to download and use, but transaction fees may apply depending on the service provider.'
+  },  
+  {
+    question:'How do I register or sign up?',
+    answer:'You can sign up using your email or phone number and create a password. Download the PayBills App on the .'
+  },  
+  {
+    question:'About Payurbills Limited',
+    answer:'Payurbills Limited is the owner of PayBills, the Bill Payment Solution provider for any utility payments based in Nigeria and Switzerland.'
+  },  
+  {
+    question:'About PayBills',
+    answer:'PayBills is the secure, simplified, smart  and safe platform provided by Payurbills for the purposes of utility bills payments on your Android Phone, iPhone and the web.'
+  },  
+  {
+    question:'Why Should I Use PayBills?',
+    answer:'PayBills is smart, simplified, secure and safe. It is versatile and comprehensive that is futuristic allowing to pay for bills, not only in Nigeria, but across the continent.'
+  },  
+  ]
   return (
-  <>
-   <div className="containers">
-     <div className="faq-container">
-      <h1>FAQ</h1>
-      {faqs.map((faq, index) => (
-        <div key={index} className="faq-item">
-          <div className="faq-question" onClick={() => toggleAnswer(index)}>
-            <h2>{faq.question}</h2>
-            {expanded === index ? (
-              <FaMinus className="icons" />
-            ) : (
-              <FaPlus className="icons" />
-            )}
-          </div>
-          <div
-            className={`faq-answer ${expanded === index ? 'show' : 'hide'}`}
-          >
-            <p>{faq.answer}</p>
-          </div>
+    <>
+    <div className="md:px-12 pt-4">
+      <div className="bg-[url(/FAQ.png)] bg-cover text-white py-10  w-full rounded-none ">
+
+      <h1 className="text-center text-xl font-semibold">FAQ</h1>
+        <div className="md:w-[500px]  p-4 mx-auto">
+
+
+          <Accordion.Root type="single" collapsible className="AccordionRoot h-[400px] overflow-auto">
+            {faqQuestions.map((details,index)=>(
+                     <Accordion.Item value={`item-${index+1}`} className="AccordionItem border-b border-white  p-3" key={index}>
+                     <Accordion.Trigger className="AccordionTrigger flex items-center gap-8 justify-between group">
+       
+                       <p className='text-lg '>{details.question}</p>
+                       <span className="transition-transform duration-300   group-data-[state=open]:rotate-180">
+                       <ChevronDownIcon className='font-semibold'/></span>
+                     </Accordion.Trigger>
+                     <Accordion.Content className="AccordionContent my-6">
+                      {details.answer}
+                     </Accordion.Content>
+                   </Accordion.Item>
+            ))}
+         
+
+           
+          </Accordion.Root>
         </div>
-      ))}
-    </div>
-    
-   </div>
-   <div className="context">
-    <div className="iconss">
-    <IoIosPhonePortrait color='#fff' size={25}/>
-    </div>
-    <h3>Download the App</h3>
-   </div>
-  </>
+      </div>
+      </div>
+    </>
   );
-};
+}
 
 export default FAQ;
-

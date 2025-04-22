@@ -1,17 +1,17 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Login from "./Component/Login";
-import { Routes, Route } from "react-router-dom";
+import DeletePolicy from "./Component/DeletePolicy";
+import Privacy from "./Component/Privacy";
 import Landing from "./Landing";
-import Signup from "./Component/Signup";
 
 function App() {
   return (
     <>
       <Routes>
         <Route path="/" element={<Landing />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Signup />} />
+        <Route path="/privacy-policy" element={<Privacy/>} />
+        <Route path="/delete-policy" element={<DeletePolicy/>} />
       </Routes>
     </>
   );

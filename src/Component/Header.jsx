@@ -4,6 +4,7 @@ import "../Styled/Header.css";
 import { List } from '@phosphor-icons/react';
 import Button from '/button.png'
 import { Link } from 'react-router-dom'
+import { FaTimes } from "react-icons/fa";
 
 function Header() {
   const headerRef = useRef(null);
@@ -54,7 +55,10 @@ function Header() {
           className={`navigation ${menuOpen ? 'active_menu' : ''}`} 
           ref={menuRef}
         >
-          <ul className="menu" onClick={(e) => e.stopPropagation()}>
+          <ul className="menu text-black " onClick={(e) => e.stopPropagation()}>
+            <li>
+              <a href="#" className =" md:hidden"onClick={handleNavLinkClick}><FaTimes  color="black" size={23} className="absolute top-6 right-6"/></a>
+            </li>
             <li>
               <a href="#" onClick={handleNavLinkClick}>Product</a>
             </li>
@@ -71,11 +75,7 @@ function Header() {
 
         {menuOpen && <div className="fixed-background" onClick={handleBackgroundClick}></div>}
 
-        <div className="button">
-  <a href="/login" className="login">Login</a>
-  <a href="/register" className="register">Register</a>
-  {/* <button className="register">Register</button> */}
-</div>
+    
         <div className="mobile_menu">
           <List size={18} color="#fff" onClick={menuToggle} />
         </div>

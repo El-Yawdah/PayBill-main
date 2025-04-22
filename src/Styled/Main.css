@@ -35,8 +35,9 @@
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 0.5rem;
   
+
 }
 
 
@@ -70,23 +71,23 @@
   text-align: center;
   font-size: 3rem;
   margin-bottom: 2vh;
-  font-family: "Bold";
+  
 }
 
 .feature-words h5{
   text-align: center;
   font-size: 1rem;
   font-weight: 500;
-  font-family: "light";
+
   
 }
 
 .download-section h1{
-  color: #DCDDE0;
+  color: #797979;
   text-align: center;
   font-size: 3rem;
   margin-top: 10vh;
-  font-family: "Bold";
+ 
 }
 
 
@@ -104,19 +105,19 @@ margin-bottom: 2rem;
 display: grid;
 grid-template-columns: repeat(12, 1fr);
 /* grid-template-rows: repeat(12, 1fr);  */
-gap: 10px; 
-margin-bottom: 2rem;
+gap: 4px; 
+
 }
 
 .image-item {
 grid-column: span 4; 
-grid-row: span 3;    
+grid-row: span 1;    
 }
 
 
 .text-item {
 grid-column: span 8; 
-grid-row: span 3;   
+grid-row: span 1;   
 background-color: #1F6CAB; 
 border-radius: 20px;
 display: flex;
@@ -127,7 +128,7 @@ align-items: flex-start;
 
 .text-items {
 grid-column: span 8; 
-grid-row: span 3;   
+grid-row: span 1;   
 background-image: url('/Frame1.png');
 border-radius: 20px;
 padding: 2rem;
@@ -138,7 +139,7 @@ padding: 2rem;
 font-size: 2rem;
 font-weight: 800;
 color: #fff;
-font-family: "Bold";
+
 }
 
 .text-items h6{
@@ -146,7 +147,7 @@ font-size: 1rem;
 font-weight: 100;
 color: #fff;
 margin-top: 1rem;
-font-family: "light";
+
 }
 
 .text-item-img img{
@@ -171,7 +172,7 @@ margin-inline: 2rem;
 .text-item-texts h3{
 color: #fff;
 font-size: 1.8rem;
-font-family: "Bold";
+
 
 }
 
@@ -181,7 +182,7 @@ font-size: 1rem;
 font-weight: 100;
 margin-top: 0.5rem;
 letter-spacing: 0rem;
-font-family: "light";
+
 line-height: 1.2rem;
 }
 
@@ -192,7 +193,7 @@ margin-top: 50%;
 .text-item-button h5{
 color: #fff;
 font-size: 1rem;
-font-family: "light";
+
 }
 
 .phone2 {
@@ -228,14 +229,14 @@ padding: 20px;
 .overlay-text h2 {
 margin: 0 0 10px; 
 font-size: 1.8rem; 
-font-family: "Bold";
+
 }
 
 .overlay-text h6 {
 margin: 0; 
 font-size: 1rem; 
 font-weight: 100;
-font-family: "light";
+
 }
 
 .buttons{
@@ -258,13 +259,13 @@ color: #fff;
 .sectiond-text h3{
 font-size: 1.8rem;
 margin-bottom: 2vh;
-font-family: "Bold";
+
 }
 
 .sectiond-text h5{
 font-size: 1rem;
 font-weight: 100;
-font-family: "light";
+
 }
 
 
@@ -289,7 +290,7 @@ margin-bottom: 3vh;
   max-width: 100%;
  }
   .section-main {
-      padding: 2rem;
+      padding: 2rem 1rem;
       background-color: #f4f4f4;
     }
     
@@ -310,7 +311,15 @@ margin-bottom: 3vh;
       
       
     }
-
+    .fund-account{
+      background-color: black;
+      width:100%;
+      height:100%;
+      opacity:80%;
+      position: absolute;
+      border-radius:0.6rem;
+      z-index: 99;
+    }
     .card img {
       max-width: 100%;
       height: auto;
@@ -330,6 +339,7 @@ margin-bottom: 3vh;
     .text-item-img img{
       width: 100%;
       margin-top: 2rem;
+      display: none;
       
     }
 
@@ -376,6 +386,17 @@ margin-bottom: 3vh;
      
     
     }
+    .text-item-button{
+      margin-top: 10%;
+      }
+      
+      .text-item-button h5{
+      color: #fff;
+      font-size: 1.2rem;
+      text-decoration:underline;
+      
+      font-family: "light";
+      }
     
     .overlay-text h2 {
       margin: 0 0 10px; 

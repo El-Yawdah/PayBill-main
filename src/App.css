@@ -1,13 +1,8 @@
-*
-{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-}
+@import "tailwindcss";
 
 
+
+/* 
 @font-face {
   font-family: 'Bold';
   src: url('./assets/Font/aeoniktrial-bold.otf') format('truetype');
@@ -21,8 +16,11 @@
   src: url('./assets/Font/aeoniktrial-light.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
-}
+} */
 
+body{
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
 
 .hero{
   background-image: url(/Hero.png);

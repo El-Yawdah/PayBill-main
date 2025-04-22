@@ -17,11 +17,12 @@ const HeroImg = () => {
       seamlessly and securely  
       </h5>
       <span>Join Now and Simplify Your Life</span>
-      <div className="icon-img">
-      <img src={Apple} alt=""  className='icons'/>
-      <img src={Google} alt=""  className='icons'/>
+      <div className=" flex gap-4 ">
+      <img src={Apple} alt=""  className='icons w-1/2 cursor-pointer
+      ' />
+      <img src={Google} alt=""  className='icons w-1/2 cursor-pointer'/>
       </div>
-      <img src={user} alt=""  className='icon'/>
+      <img src={user} alt=""  className='icon mt-4'/>
     </div>
     <div className="hero-img">
       <img src={Hero} alt="" />

@@ -20,7 +20,7 @@
     width: 90%;
     font-weight: bolder;
     margin-bottom: 3vh;
-    font-family: "Bold";
+   
 }
 
 .hero-mark h5{
@@ -28,28 +28,19 @@
     width: 80%;
     font-weight: 100;
     margin-bottom: 5vh;
-    font-family: 'light';
+    
 }
 
 .hero-mark span{
-    font-weight: bold;
-    font-family: "Bold";
+   
     display: block;
     cursor: pointer;
     margin-bottom: 3vh;
 }
 
-.icon{
-    width: 100px;
-    height: 100%;
-    cursor: pointer;
-}
 
-.icons{
-    width: 100px;
-    cursor: pointer;
-    margin-bottom: 3vh;
-}
+
+
 .icon img{
     width: 100%;
    
